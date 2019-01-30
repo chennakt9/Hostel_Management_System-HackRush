@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+<?php
+
+include("../connection.php");
+
+?>
+
+
+<?php
+if(isset($_POST['bro_submit'])){
+	$name = $_POST["name"];
+	$males = $_POST["males"];
+	$females = $_POST["females"];
+	$purpose = $_POST["purpose"];
+	$in = $_POST["in"];
+	$out = $_POST["out"];
+	$mess = $_POST["mess"];
+	$reference = $_POST["reference"];
+	$email = $_POST["email"];
+	$number = $_POST["number"];
+
+
+
+	// echo $name."<br>";
+	// echo $males."<br>";
+	// echo $females."<br>";
+	// echo $purpose."<br>";
+	// echo $in."<br>";
+	// echo $out."<br>";
+	// echo $mess."<br>";
+	// echo $reference."<br>";
+	// echo $email."<br>";
+	// echo $number."<br>";
+
+	$query="INSERT INTO `users`(`no_of_male`, `no_of_female`, `purpose_of_visit`, `mess_facility`, `indate`, `outdate`, `reference`, `name`, `contactno`, `email`) VALUES ('".$males."','".$females."','".$purpose."','".$mess."','".$in."','".$out."','".$reference."','".$name."','".$number."','".$email."')";
+	$data = mysqli_query($conn,$query);
+
+	if($data){
+
+		echo "Data inserted into Data Base"."<br/>";
+
+
+	<script type="text/javascript">
+	    var form = getElementById('form');
+	    form.onsubmit = function (e) {
+	        // e.preventDefault();
+	        form.reset();
+	    }
+	</script>	
+	}
+}
+
+
+
+?>
+
+</html>

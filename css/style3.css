@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.opensans{
+    font-family: "Open sans";
+    color: rgb(240,240,240);
+}
+
+.header {
+    display: grid;
+    grid-template-areas: "image  list";
+    grid-template-columns: 5fr 1fr;
+    width: 100%;
+    background-color: rgb(179, 217, 255);
+    /*background-color: aliceblue;*/
+    position: fixed;
+    margin: 0;
+    z-index: 3;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "one two three";
+    align-items: center;
+    justify-items: center;
+    padding-right: 10px;
+}
+.image {
+    height: 150px;
+}
+
+.button3 {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: blue;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 16px;
+  border: 1px solid blue;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+    font-size: 16px;
+}
+
+.button3:hover {opacity: 0.5}
+
+.Submit {
+    text-align: center;
+}
+
+.gender {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "male female";
+}
+
+.male {
+    grid-area: "male";
+}
+
+.female {
+    grid-area: "female";
+}
+
+.date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "arrival goback"; 
+}
+
+.arrival {
+    grid-area: "arrival";
+}
+
+.goback {
+    grid-area: "goback";
+}
+
+input[type = submit]:hover {
+     opacity: 1;
+}
+input[type = submit] {
+    height: 40px;
+    background-color: rgb(232, 239, 252);
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: 2px solid rgb(232, 239, 252);
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+    text-align: center;   
+}
+
+input {
+    border-radius: 3px;
+    border: none;
+    height: 25px;
+}
+
+.footer {
+    background-color: white;
+    padding: 10px;
+    color: rgb(180, 180, 180);
+}
+
+.content {
+    background-image: url("http://news.iitgn.ac.in/wp/wp-content/uploads/2018/01/Carport-1-1280x640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.black {
+    background-color: black;
+    opacity: 0.7;
+}
+
+#bright {
+    border-radius: 10px;
+    padding: 5%;
+    margin: 0 33%;
+    /*background-color: rgb(95, 145, 236);*/
+    background-color: transparent;
+    opacity: 1!important; 
+    color: white;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>IITGN - Book a room</title>
+</head>
+<body>
+    <div class = "main">
+        <form action="bro_parse.php" method="POST" id="form">
+            Name of the candidate:<br>
+            <input type = "text" name = "name" size = 50 required placeholder="Chenna Kesava" id="name"><br><br>
+            Number of males:<br>
+            <input type = "number" name = "males" min = 0 required><br><br>
+            Number of females:<br>
+            <input type = "number" name = "females" min = 0 required><br><br>
+            Purpose of visit:<br>
+            <input type = "text" name = "purpose" size = 50 required><br><br>
+            Date of Arrival:<br>
+            <input type = "date" name = "in" required><br><br>
+            Date of Departure:<br>
+            <input type = "date" name = "out" required><br><br>
+            Is Mess facility needed:<br>
+            <!-- <input type="checkbox" name="mess" value="yes" defaultValue="no">Mess Required<br><br> -->
+            <input type = "text" name = "mess" size = 50 required placeholder="yes or no" pattern="[A-Za-z]{2,3}"><br><br>
+            Reffered by:<br>
+            <input type = "text" name = "reference" size = 50 required ><br><br>
+            Email Address:<br>
+            <input type = "email" name = "email" size = 50 required placeholder="chenna@yahoo.com"><br><br>
+            Contact number:<br>
+            <input type = "text" name = "number" required placeholder="9182515611"><br><br>
+            <input type = "submit" value = "Submit" name="bro_submit">
+
+
+        </form>
+
+        <!-- <script type="text/javascript">
+            var form = document.getElementById('form');
+            form.onsubmit = function (e) {
+                e.preventDefault();
+                form.reset();
+            }
+        </script> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>IITGN - Book a Room</title>
+    <link href = "../css/style3.css",  type = "text/css", rel = "stylesheet"/>
+</head>
+<body>
+    <div class = "header">
+        <div class = "image"><br><image src = 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/IIT_Gandhinagar_Logo.svg/220px-IIT_Gandhinagar_Logo.svg.png' alt = "IITGN logo" height = 110px></image></div>
+        <div class = "list">
+            <div><a href="hostel_accomodation.html" class="button3">Home</a></div>
+            <div><a href="Hostel.html" class = "button3">Book a Room</a></div>
+            <div class = "button3"><a href = "#contact">Contact Us</a></div>
+        </div>
+    </div>
+    <div class = "content"> <div class = "black">
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <div class = "main opensans" id = "bright">
+            <form action="bro_parse.php" method="POST" id="form">
+                Name of the candidate:<br>
+                <input type = "text" name = "name" size = 50 required placeholder = "Rahul"><br><br>
+                <div class = "gender opensans">
+                    <div cass = "male">
+                        Number of males:<br>
+                        <input type = "number" name = "males" min = 0 required><br><br>
+                    </div>
+                    <div class = "female">
+                        Number of females:<br>
+                        <input type = "number" name = "females" min = 0 required><br><br>
+                    </div>
+                </div>
+                Purpose of visit:<br>
+                <input type = "text" name = "purpose" size = 50 required><br><br>
+                <div class = "date">
+                    <div class = "arrival">
+                        Date of Arrival:<br>
+                        <input type = "date" name = "in" required><br><br>
+                    </div>
+                    <div class = "goback">
+                        Date of Departure:<br>
+                        <input type = "date" name = "out" required ><br><br>
+                    </div>
+                </div>
+                Is Mess facility needed:<br>
+                <input type = "text" name = "mess" size = 50 required placeholder = "yes or no" pattern = "[A-Za-z]{2, 3}"><br><br>
+                Reffered by:<br>
+                <input type = "text" name = "reference" size = 50 required><br><br>
+                Email Address:<br>
+                <input type = "email" name = "email" size = 50 required placeholder = "rahul123@gmail.com" required><br><br>
+                Contact number:<br>
+                <input type = "number" name = "number" size = 50 required placeholder = "1234567890" required><br><br>
+                <div class = "Submit"><input type = "submit" value = "Submit" name="bro_submit"></div>
+            </form>
+        </div>
+        <br><br><br><br><br><br><br><br>
+    </div>
+    </div>
+    <div class = "footer" id = "contact">
+        <h2><b>Contact Us</b></h2>
+        <hr>
+        <h2 class = "IITGN">Indian Institute of Technology, Gandhinagar</h2>
+        <p>Palaj, Gandhinagar - 382355, India</p>
+    </div>
+    </body>
+</html>
